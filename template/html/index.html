@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+  var nextHalvingDate = new Date("May 10, 2024 19:12:00 UTC");
+  function updateCountdown() {
+      var now = new Date().getTime();
+      var timeLeft = nextHalvingDate - now;
+
+      var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      setTimeout(updateCountdown, 1000);
+  }
+  updateCountdown();
+  </script>
+  <style>
+    .btn-whatsapp {
+      background-color: #25D366; 
+      color: #FFFFFF; 
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+
+    article {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    iframe {
+      width: 65%; 
+      height: 350px;
+      border-radius: 15px; 
+      border: none;
+      display: block; 
+      margin: 0 auto; 
+    }
+    .btn-whatsapp:hover {
+      background-color: #128C7E;
+    }
+
+    .btn-whatsapp i {
+      margin-right: 10px;
+    }
+    .footer {
+      background-color: #202020;
+      color: #FFFFFF;
+      text-align: center; 
+      position: fixed; 
+      width: 100%; 
+      bottom: 0;
+      left: 0;
+      padding: 10px 0;
+    }
+
+  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrC ☕ - website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.0/lazysizes.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <center>
+      <article>
+        <p><strong><h1>Cripto Café ☕</h1>Participe do nosso grupo de WhatsApp sobre Bitcoin preenchendo nosso formulário do Google Forms. O Bitcoin oferece uma oportunidade única para democratizar o dinheiro, promover inclusão financeira e eliminar intermediários desnecessários. Junte-se a nós para discussões, análises de mercado e informações valiosas sobre o Bitcoin e outras criptomoedas. Não perca esta chance de fazer parte de uma comunidade dedicada a um futuro financeiro mais transparente e descentralizado.</strong></p>
+        <a href="https://forms.gle/MxFqEbs8jbjSLg6J6" title="para fazer o formulário" class="btn-whatsapp">
+          <i class="fa fa-whatsapp"></i> Faça já seu formulário e participe da nossa comunidade
+        </a>
+
+  </div>
+  <h1 style="text-align:center;";>Saiba mais sobre o <strong>Bitcoin Halving</strong></h1>
+        <iframe src="https://78ac9003-4adb-408e-826b-2631403d564c-00-lo7kjps1dx1y.picard.replit.dev:3002/bitcoin.html" frameborder="0"></iframe>
+  </center>
+</br>
+  </br>
+    </article>
+</body>
+</html>

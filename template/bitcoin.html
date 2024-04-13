@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- HTML comment -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- code for favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
+  <link rel="stylesheet" type="text/css" href="halving.css" />
+
+  <!-- defer loads html first then JS -->
+  <script defer type="text/javascript" src="halving.js"></script>
+
+  <title>Bitcoin Halving Countdown</title>
+</head>
+
+<body>
+
+  <div class="frame">
+
+    <header>
+      <h1>
+        <span class="banner">Crc ☕</span> <br>
+        <span id="bitcoin">The cripto Café ☕| Dimensions</span>
+        </a>
+      </h1>
+
+      <hr>
+      <h2>Rastreie seu evento de halving bitcoin usando a tecnologia dimensions</h2>
+      <hr>
+    </header>
+    <div class="coinlore-priceticker-widget" data-mcurrency="usd"></div>
+
+    <img class="background-img" draggable="false" src="assets/bitcoin.png" />
+
+    <main>
+
+      <ul class="half">
+        <span class="label">
+          tempo que falta
+        </span>
+        <li>
+          <span id="time-estimate"></span>
+        </li>
+      </ul>
+
+      <ul class="half">
+        <span class="label">
+          data do halving
+        </span>
+        <li>
+          <span id="halving-date"></span>
+        </li>
+      </ul>
+
+      <ul>
+        <span class="label">
+          Current Block Height
+        </span>
+        <li>
+          <span id="current-block-height"></span>
+        </li>
+      </ul>
+
+      <ul>
+        <span class="label">
+          Bloco halving
+        </span>
+        <li>
+          <span id="halving-block"></span>
+        </li>
+      </ul>
+
+      <ul>
+        <span class="label">
+          Blocks Remaining
+        </span>
+        <li>
+          <span id="remaining-blocks"></span>
+        </li>
+      </ul>
+
+
+      <ul class="half">
+        <span class="label">
+          maior transação
+        </span>
+        <li>
+          <span id="maxTransaction"></span>
+        </li>
+      </ul>
+
+      <ul class="half">
+        <span class="label">
+         Menos transação
+        </span>
+        <li>
+          <span id="minTransaction"></span>
+        </li>
+      </ul>
+
+    </main>
+
+  </div>
+
+
+</body>
+
+</html>
